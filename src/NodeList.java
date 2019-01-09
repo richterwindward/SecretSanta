@@ -108,12 +108,9 @@ public class NodeList<E> implements Iterable<E> {
         Node<E> current = this.head.getNext();
 
         for(int i = 0; i < this.size - 1; i++){
-            System.out.println(current.getName() + " -> " + current.getNext().getName());
-
             writer.println(current.getName() + " -> " + current.getNext().getName());
             /* StringBuilder is more efficient than string concatenation using + operator */
             /* there will be '+'s instead of a space in the email because of URI encoding standards. sorry. */
-
             StringBuilder msg = new StringBuilder();
             msg.append("Your assignment: ");
             msg.append(current.getNext().getName());
