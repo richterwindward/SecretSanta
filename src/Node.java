@@ -1,3 +1,4 @@
+/* from class lectures */
 public class Node<E> {
     private E content;
     private E name;
